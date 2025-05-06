@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Countdown Timers</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiple Countdown Timers</h1>
+        <div id="countdown-list">
+            </div>
+        <button id="addTimerButton">Add New Timer</button>
+    </div>
+
+    <audio id="timerEndSound" src="Notification.mp3"></audio>
+
+    <template id="countdownTemplate">
+        <div class="countdown-item">
+            <h3>Countdown</h3>
+            <div class="input-fields">
+                <label for="targetDate">Target Date:</label>
+                <input type="date" class="targetDate">
+                <label for="targetTime">Target Time (HH:MM):</label>
+                <input type="time" class="targetTime">
+                <button class="startButton">Start</button>
+                <button class="removeButton">Remove</button>
+            </div>
+            <div class="countdown" id="">
+                <div class="time-segment">
+                    <span class="days">00</span>
+                    <span>Days</span>
+                </div>
+                <div class="time-segment">
+                    <span class="hours">00</span>
+                    <span>Hours</span>
+                </div>
+                <div class="time-segment">
+                    <span class="minutes">00</span>
+                    <span>Minutes</span>
+                </div>
+                <div class="time-segment">
+                    <span class="seconds">00</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <div class="message"></div>
+        </div>
+    </template>
+
+    <script src="script1.js"></script>
+</body>
+</html>
